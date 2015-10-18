@@ -1,8 +1,7 @@
 module Employee
   class Data < Grape::API
 
-
-    resource :employee do
+    resource :list do
       ## Show list of employee
       desc 'List all Employee'
 

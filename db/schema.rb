@@ -11,12 +11,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151017162624) do
+ActiveRecord::Schema.define(version: 20151018063253) do
 
   create_table "emp_data", force: :cascade do |t|
     t.string   "name",       limit: 255
     t.string   "address",    limit: 255
     t.integer  "age",        limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "tbl_albums", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "tbl_genres", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "tbl_musics", force: :cascade do |t|
+    t.string   "title",      limit: 255
+    t.string   "artist",     limit: 255
+    t.integer  "year",       limit: 4
+    t.integer  "genre_id",   limit: 4
+    t.integer  "album_id",   limit: 4
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  artist: MyString
+  year: 1
+  genre_id=integer: MyString
+  album_id=integer: MyString
+
+two:
+  title: MyString
+  artist: MyString
+  year: 1
+  genre_id=integer: MyString
+  album_id=integer: MyString
