@@ -1,6 +1,6 @@
 # Restful API Ruby on Rails
 
-Contoh Restful API mengguanakn Ruby on Rails
+Contoh Restful API menggunakan Ruby on Rails
 dengan tambahan plugin Grape (https://github.com/ruby-grape/grape)
 
 Intruksi untuk menggunakan:
