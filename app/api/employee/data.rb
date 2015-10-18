@@ -2,9 +2,9 @@ module Employee
   class Data < Grape::API
 
 
-    resource :employee_data do
+    resource :employee do
       ## Show list of employee
-      desc "List all Employee"
+      desc 'List all Employee'
 
       get do
         EmpDatum.all
@@ -27,7 +27,7 @@ module Employee
       end
 
       ## This takes care of updating employee
-      desc "update an employee address"
+      desc 'update an employee address'
       params do
         requires :id, type: String
         requires :address, type: String
@@ -40,7 +40,7 @@ module Employee
       end
 
       ## This takes care of destroy employee
-      desc "delete an employee"
+      desc 'delete an employee'
       params do
         requires :id, type: String
       end
